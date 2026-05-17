@@ -35,4 +35,16 @@ return [
         ],
     ],
 
+    'openai' => [
+        'api_key' => env('OPENAI_API_KEY'),
+        'model' => env('OPENAI_MODEL', 'gpt-4o-mini'),
+        'system_prompt' => env('OPENAI_SYSTEM_PROMPT', 'You are a helpful and concise assistant responding to WhatsApp messages in the same language used by the customer.'),
+    ],
+
+    'evolution' => [
+        'url' => env('EVOLUTION_API_URL'),
+        'api_key' => env('EVOLUTION_API_KEY'),
+        'instance' => env('EVOLUTION_INSTANCE', 'main'),
+    ],
+
 ];
